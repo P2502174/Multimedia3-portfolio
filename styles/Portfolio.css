@@ -1,0 +1,126 @@
+/*portfolio styling*/
+
+.portfolio {
+    margin: 5rem auto 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-heading-wrapper h2 {
+    position: relative;
+    margin: 4rem 0 4rem 0;
+    width: max-content;
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: var(--dark-brown);
+}
+
+.portfolio-heading-wrapper img {
+    display: none;
+}
+
+.portfolio-heading::before, .portfolio-heading::after {
+    content: "";
+    width: 2.9rem;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    border: 1px solid var(--dark-brown);
+}
+
+.portfolio-heading::before {
+    left: -20%;
+}
+
+.portfolio-heading::after {
+    right: -20%;
+}
+
+.portfolio-brands-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-brand {
+    position: relative;
+}
+
+.portfolio-brand img {
+    margin-bottom: 5rem;
+    width: 85vw;
+    object-fit: cover;
+    height: 37rem;
+    opacity: 0.8;
+}
+
+.portfolio-brand a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.portfolio-brand a:hover {
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+}
+
+.portfolio-line-bottom {
+    display: none;
+}
+
+@media only screen and (min-width: 750px) {
+    .portfolio-heading-wrapper {
+        display: flex;
+        align-self: flex-start;
+    }
+
+    .portfolio-heading-wrapper h2 {
+        font-size: 4rem;
+        color: var(--black);
+    }
+
+    .portfolio-heading-wrapper img {
+        margin-left: 2rem;
+        display: block;
+    }
+
+    .portfolio-heading::before, .portfolio-heading::after {
+        display: none;
+    }
+
+    .portfolio-brands-wrapper {
+        flex-direction: row;
+        width: 100vw;
+    }
+
+    .portfolio-brand {
+        width: 33.3vw;
+    }
+
+    .portfolio-brand img {
+        width: 33.3vw;
+        object-fit: cover;
+    }
+
+    .portfolio-line-bottom {
+        display: block;
+        border-bottom: 1px solid var(--black);
+        width: 90vw;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .portfolio-brand img {
+        height: 60rem;
+    }
+}

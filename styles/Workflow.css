@@ -1,0 +1,167 @@
+/*Workflow styling*/
+
+.workflow {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, max-content);
+    justify-items: center;
+}
+
+.workflow-heading {
+    grid-column: 1/-1;
+    grid-row: 1;
+    margin: 2rem 0 2rem 0;
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    width: max-content;
+}
+
+.workflow-category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.workflow-category-image-1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.workflow-category-image-2 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.workflow-category-title {
+    margin-top: 2rem;
+    grid-column: 1/-1;
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.workflow-category-title-1 {
+    color: var(--dark-brown);
+}
+
+.workflow-category-title-2 {
+    color: var(--brown);
+}
+
+.workflow-category-title-3 {
+    color: var(--light-brown);
+}
+
+.workflow-category-paragraph {
+    margin-top: 2rem;
+    grid-column: 1/-1;
+    width: 70%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+.workflow-category-image-3 {
+    display: none;
+}
+
+@media only screen and (min-width: 750px) {
+    .workflow-category-image-3 {
+        display: block;
+    }
+
+    .workflow {
+        margin: 5rem auto 0 auto;
+        width: 90vw;
+        display: grid;
+        grid-template-columns: max-content repeat(3, 1fr);
+        grid-template-rows: repeat(2, max-content);
+        grid-column-gap: 1rem;
+    }
+
+    .workflow-heading {
+        margin: 0;
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        height: max-content;
+        font-size: 4.5rem;
+        letter-spacing: 8px;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .workflow-category-image {
+        max-height: 50rem;
+    }
+
+    .workflow-category-image-1 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .workflow-category-image-2 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .workflow-category-image-3 {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .workflow-category-title {
+        color: var(--dark-brown);
+    }
+
+    .workflow-category-title-1 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .workflow-category-title-2 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .workflow-category-title-3 {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .workflow-category-paragraph {
+        width: 90%;
+    }
+
+    .workflow-category-paragraph-1 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .workflow-category-paragraph-2 {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .workflow-category-paragraph-3 {
+        grid-column: 4;
+        grid-row: 2;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .workflow {
+        width: 70vw;
+    }
+
+    .workflow-category-image {
+        max-height: 70rem;
+    }
+}

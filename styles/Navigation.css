@@ -1,0 +1,45 @@
+/*Navigation styling*/
+@import "variables.css";
+
+.nav-wrapper {
+    z-index: 999;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--light-brown);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-close {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    cursor: pointer;
+}
+
+.nav-links-wrapper {
+    width: max-content;
+}
+
+.nav-links-wrapper li {
+    padding: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Antic Didone', serif;
+}
+
+.nav-links-wrapper li a:hover {
+    color: var(--dark-brown);
+}
+
+.active {
+    color: var(--dark-brown);
+}

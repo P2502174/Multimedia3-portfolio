@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Montserrat&display=swap');
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    /* Set up rem = 10px */
+    font-size: 62.5%;
+    /*width: 100vw;*/
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* Set up rem = 10px */
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+}
+
+a, button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    color: #000;
+    cursor: pointer;
+}
+
+button {
+    background-color: inherit;
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+hr {
+    margin: 0;
+}
+
+input, textarea {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+@media only screen and (min-width: 750px) {
+    body {
+        position: relative;
+        min-height: 100vh;
+        padding-bottom: 15rem;
+    }
+}

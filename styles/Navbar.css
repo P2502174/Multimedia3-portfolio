@@ -1,0 +1,42 @@
+/*Navbar styling*/
+@import "variables.css";
+
+.navbar-wrapper {
+    padding: 2rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+}
+
+.navbar-logo {
+    width: 9.4rem;
+    height: 100%;
+}
+
+.navbar-menu {
+    width: 2.9rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+.navbar-icons-wrapper {
+    display: none;
+}
+
+@media only screen and (min-width: 750px) {
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-icons-wrapper {
+       margin-top: 0;
+        display: flex;
+    }
+
+    .navbar-icons-wrapper img {
+        width: 3rem;
+        height: 3rem;
+    }
+}

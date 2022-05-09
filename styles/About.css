@@ -1,0 +1,170 @@
+/*About styling*/
+
+.about {
+    position: relative;
+    margin: 5rem auto 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-heading {
+    font-size: 3.5rem;
+    text-wrap: normal;
+    text-align: right;
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    align-self: flex-end;
+}
+
+.about-heading span {
+    color: var(--brown);
+}
+
+.about-details {
+    margin-top: 2rem;
+    max-width: 60%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-paragraph {
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.about-line {
+    position: absolute;
+    width: 1px;
+    border-left: 1px solid var(--black);
+}
+
+.about-line-left-big {
+    top: 0;
+    left: 0;
+    height: 25rem;
+}
+
+.about-line-left-small {
+    top: 4rem;
+    left: 2rem;
+    height: 15rem;
+}
+
+.about-line-right-big {
+    top: 0;
+    right: 0;
+    height: 25rem;
+}
+
+.about-line-right-small {
+    top: 4rem;
+    right: 2rem;
+    height: 15rem;
+}
+
+.about-image-wrapper {
+    margin-top: 3rem;
+    position: relative;
+    width: 100%;
+}
+
+.about-image {
+    width: 70vw;
+    height: 100%;
+    object-fit: cover;
+    align-self: flex-start;
+}
+
+.about-button {
+    margin-top: 1rem;
+    padding: 0.7rem;
+    border: 1px solid var(--black);
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    align-self: flex-end;
+}
+
+.about-line-bottom {
+    display: none;
+}
+
+@media only screen and (min-width: 750px) {
+    .about {
+        width: 100vw;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        grid-template-rows: repeat(12, minmax(0, 1fr));
+    }
+
+    .about-image-wrapper {
+        grid-column: 7/12;
+        grid-row: 2/11;
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+
+    .about-image {
+        width: auto;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .about-heading {
+        grid-column: 1/-1;
+        grid-row: 1/3;
+        justify-self: center;
+        width: min-content;
+        z-index: 1;
+        font-size: 4rem;
+    }
+
+    .about-details {
+        margin-top: 0;
+        grid-column: 2/6;
+        grid-row: 3/10;
+        max-width: 100%;
+    }
+
+    .about-paragraph {
+        font-size: 1.8rem;
+        text-align: left;
+    }
+
+    .about-button {
+        width: max-content;
+        align-self: flex-start;
+    }
+
+    .about-line-left-big,
+    .about-line-left-small,
+    .about-line-right-big,
+    .about-line-right-small {
+        display: none;
+    }
+
+    .about-line-bottom {
+        grid-column: 2/12;
+        grid-row: 11/11;
+        display: block;
+        top: 0;
+        right: 0;
+        height: 100%;
+        border-bottom: 1px solid var(--black);
+    }
+
+    .about-icons {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .about-details {
+        max-width: 60%;
+        justify-self: center;
+    }
+}

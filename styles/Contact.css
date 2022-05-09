@@ -1,0 +1,147 @@
+/*Contact styling*/
+
+.contact {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-heading {
+    width: min-content;
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.contact-wrapper-lines {
+    width: 100%;
+}
+
+.contact-wrapper {
+    width: 100%;
+}
+
+.contact-text-wrapper {
+    margin: 1rem 0 3rem 0;
+    padding: 2rem 0 2rem 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--black);
+}
+
+.contact-text-wrapper p {
+    width: 40%;
+    color: var(--white);
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.contact-text-wrapper svg {
+    display: none;
+}
+
+.contact-form-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form input, .contact-form textarea {
+    margin-top: 2rem;
+    padding: 0.5rem;
+    width: 100%;
+    border: 1px solid var(--black);
+    border-radius: 0;
+}
+
+.contact-form textarea {
+    height: 16rem;
+}
+
+.contact-form button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    align-self: flex-start;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+@media only screen and (min-width: 750px) {
+    .contact {
+        margin: 0 auto;
+    }
+
+    .contact-heading {
+        margin: 5rem 0 2rem 0;
+        width: max-content;
+    }
+
+    .contact-wrapper-lines {
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-wrapper-lines span {
+        width: 20%;
+        border-bottom: 1px solid var(--black);
+    }
+
+    .contact-wrapper {
+        display: flex;
+        border: 1px solid var(--black);
+    }
+
+    .contact-text-wrapper {
+        margin: 0;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .contact-text-wrapper p {
+        width: 70%;
+    }
+
+    .contact-text-wrapper svg {
+        display: block;
+        margin-top: 2rem;
+        fill: none;
+        stroke: white;
+        stroke-width: 1px;
+    }
+
+
+    .contact-icons-wrapper {
+        margin: 0 2rem 0 0;
+        align-self: flex-end;
+    }
+
+    .contact-icons-wrapper img {
+        margin: 0.5rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .contact-wrapper {
+        width: 60%;
+    }
+
+    .contact-wrapper-lines span {
+        width: 40%;
+    }
+}

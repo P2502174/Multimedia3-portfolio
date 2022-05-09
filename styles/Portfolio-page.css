@@ -1,0 +1,213 @@
+/*portfolio page styling*/
+
+.portfolio {
+    margin: 5rem auto 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-heading {
+    position: relative;
+    margin: 4rem 0 4rem 0;
+    width: max-content;
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: var(--dark-brown);
+}
+
+.portfolio-heading::before, .portfolio-heading::after {
+    content: "";
+    width: 2.9rem;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    border: 1px solid var(--dark-brown);
+}
+
+.portfolio-heading::before {
+    left: -20%;
+}
+
+.portfolio-heading::after {
+    right: -20%;
+}
+
+.portfolio-brands-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-brand {
+    position: relative;
+}
+
+.portfolio-brand-image {
+    margin-bottom: 5rem;
+    width: 85vw;
+    object-fit: cover;
+    height: 37rem;
+    opacity: 0.8;
+}
+
+.portfolio-brand-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.portfolio-brand-link:hover {
+    text-decoration: line-through;
+    text-decoration-thickness: 1px;
+}
+
+.portfolio-line-bottom {
+    display: none;
+}
+
+.portfolio-brand-image-background {
+    display: none;
+}
+
+.portfolio-brand-details {
+    display: none;
+}
+
+@media only screen and (min-width: 750px) {
+    .portfolio {
+        /*margin: 0 auto;*/
+        width: 100%;
+    }
+
+    .portfolio-heading {
+        position: relative;
+        font-size: 2.5rem;
+        color: var(--dark-brown);
+        text-align: center;
+    }
+
+    .portfolio-heading h2::before, .portfolio-heading h2::after {
+        content: "";
+        width: 2.9rem;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        border: 1px solid var(--dark-brown);
+    }
+
+    .portfolio-heading::before {
+        left: -30%;
+    }
+
+    .portfolio-heading::after {
+        right: -30%;
+    }
+
+    .portfolio-brand-link {
+        display: none;
+    }
+
+    .portfolio-brands-wrapper {
+        width: 100%;
+    }
+
+    .portfolio-brand {
+        width: 100%;
+        margin-bottom: 8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .portfolio-brand:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+
+    .portfolio-brand-image {
+        display: block;
+        content: "";
+        margin: 0;
+        grid-column: 1;
+        grid-row: 1;
+        max-width: 30rem;
+        max-height: 30rem;
+        position: relative;
+        opacity: 1;
+        padding: 8px 8px 8px 8px;
+    }
+
+    .portfolio-brand-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .portfolio-brand-header {
+        width: max-content;
+        font-size: 3.5rem;
+        font-family: 'Antic Didone', serif;
+        font-weight: 400;
+    }
+
+    .portfolio-brand-paragraph {
+        max-width: 30vw;
+        font-size: 1.5rem;
+    }
+
+    .portfolio-brand-button {
+        margin-top: 1rem;
+        padding: 0.5rem;
+        width: max-content;
+        font-size: 1.3rem;
+        font-family: 'Antic Didone', serif;
+        font-weight: 400;
+        border: solid 1px var(--black);
+    }
+
+    .theOrdinary-heading {
+        color: var(--orange);
+    }
+
+    .theOrdinary-background {
+        background: linear-gradient(var(--orange) 0 0) 100% 100% / 90% 90% no-repeat;
+    }
+
+    .curology-heading {
+        color: var(--purple);
+    }
+
+    .curology-background {
+        background: linear-gradient(var(--purple) 0 0) 100% 100% / 90% 90% no-repeat;
+    }
+
+    .nora-heading {
+        color: var(--brown);
+    }
+
+    .nora-background {
+        background: linear-gradient(var(--brown) 0 0) 100% 100% / 90% 90% no-repeat;
+    }
+
+    .icons-wrapper {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .portfolio-brand-paragraph {
+        width: 50%;
+    }
+
+    .portfolio-brand {
+        width: 70%;
+    }
+}

@@ -1,0 +1,190 @@
+/*Styling for portfolio projects*/
+
+.header-wrapper {
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-wrapper h1, .header-wrapper h2 {
+    font-weight: 400;
+    font-size: 3.5rem;
+    font-family: 'Antic Didone', serif;
+    color: var(--dark-brown);
+    position: relative;
+}
+
+.purple {
+    color: var(--purple) !important;
+}
+
+.header-wrapper h1::before, .header-wrapper h1::after {
+    content: "";
+    width: 2.9rem;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    border: 1px solid var(--dark-brown);
+}
+
+.header-wrapper h1::before {
+    left: -20%;
+}
+
+.header-wrapper h1::after {
+    right: -20%;
+}
+
+.header-wrapper h2 {
+    margin-top: 5rem;
+    color: var(--orange);
+    width: min-content;
+    text-align: center;
+}
+
+.images-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images-wrapper img {
+    margin: 2rem 0 2rem 0;
+    width: 90%;
+    object-fit: cover;
+}
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.about-wrapper h2 {
+    margin: 3rem 0 2rem 0;
+    font-weight: 400;
+    font-size: 3.5rem;
+    font-family: 'Antic Didone', serif;
+    width: min-content;
+    text-align: center;
+}
+
+.about-wrapper p {
+    margin-top: 2rem;
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.about-wrapper table {
+    margin-top: 5rem;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+.about-wrapper table tr {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    font-size: 1.2rem;
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+}
+
+.about-wrapper table tr td {
+    padding: 0.3rem;
+}
+
+.about-wrapper table tr td:first-child {
+    text-align: left;
+}
+
+.about-wrapper table tr td:last-child {
+    text-align: right;
+}
+
+.nextProject-wrapper {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nextProject-wrapper h2 {
+    margin: 3rem 0 2rem 0;
+    font-weight: 400;
+    font-size: 3.5rem;
+    font-family: 'Antic Didone', serif;
+    width: min-content;
+    text-align: center;
+}
+
+.nextProject-img-wrapper {
+    position: relative;
+}
+
+.nextProject-img-wrapper img {
+    height: 35rem;
+    width: 35rem;
+}
+
+.nextProject-img-wrapper div {
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    background-color: var(--brown);
+    padding: 1rem 2rem 1rem 2rem;
+    cursor: pointer;
+}
+
+.nora {
+    background-color: var(--orange) !important;
+    bottom: 2rem !important;
+    top: auto !important;
+}
+
+.nextProject-img-wrapper div span {
+    font-family: 'Antic Didone', serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+@media only screen and (min-width: 750px) {
+    .images-wrapper img {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .icons-wrapper-bottom {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .images-wrapper {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .about-wrapper p {
+        width: 55%;
+    }
+
+    .about-wrapper table {
+        width: 60%;
+    }
+
+    .about-wrapper table tr {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .images-wrapper {
+        margin: 0 auto;
+        width: 60%;
+    }
+}

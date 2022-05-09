@@ -1,0 +1,12 @@
+.icons-wrapper {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-wrapper img {
+    margin: 1.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+}
